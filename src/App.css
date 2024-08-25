@@ -1,0 +1,724 @@
+#container{
+  width: 70%;
+}
+nav{
+  background: #000;
+}
+/* ---------------Home section  */
+#Home::before{
+  content: "";
+  background-image: url(./assets/rupixen-Ai6sfNRvlvc-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; 
+  z-index: -1;
+  filter: brightness(0.3);
+}
+#Home{
+  height: 80vh;
+  color: white;
+}
+#Home #home-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+#Home #home-section #home-left{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px;
+}
+#Home #home-section #home-left h1{
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+#Home #home-section #home-left p{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#Home #home-section #home-left h1 span{
+  font-weight: bolder;
+  font-size: 45px;
+}
+#Home #home-section #home-left p{
+  font-weight: lighter;
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  line-height: 1.4em;
+}
+
+#Home #home-section #home-right{
+  width: 50%;
+  padding: 20px;
+}
+
+/* ----------------About section */
+#About{
+  height: 100vh;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#About #about-section #about-right #contact-info{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+}
+#About #about-section #about-right #contact-info p{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 8px 0 8px;
+}
+#About .profile-2{
+  height: 100%;
+}
+#About .portfolio-img{
+  height: 700px;
+  width: 85%;
+}
+.a-left{
+  width: 45%;
+}
+.a-right{
+  width: 55%;
+}
+/* ----------------------Skills section */
+#Skills{
+  height: 90.5vh;
+  border-radius: 30px;
+}
+#Skills #skill-right{
+  width: 50%;
+  height: 95%;
+  padding: 20px;
+  object-fit: cover;
+}
+#Skills .skills-img{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#Skills .coding-img{
+  height: 100%;
+  width: 100%;
+}
+/* -------------Project section */
+#Project{
+  height: 88vh;
+}
+#project{
+  background: #3d3d3d7f;
+  border: 2px solid #3d3d3d7f;
+  border-radius: 10px;
+  width: 47%;
+  height: 250px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(123, 123, 123, 0.064);
+}
+#prog-text{
+  width: 47%;
+}
+#prog-img{
+  width: 50%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+#prog-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: top;
+}
+#Footer{
+  height: 80px;
+  padding: 20px;
+}
+/* --------------------contact section */
+#Contact{
+  height:83vh;
+}
+#Contact #contact-left{
+  border-radius: 10px;
+  width: 30%;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.54);
+}
+#Contact #contact-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.54);
+  padding: 20px;
+  margin: 20px;
+}
+#Contact #contact-right input div{
+  margin: 5px;
+}
+#Contact #contact-right input{
+  width: 100%;
+  background-color: rgba(111, 109, 109, 0.437);
+  border: none;
+  color: white;
+}
+/* ----------------------page footer */
+#page-footer{
+  border-top-left-radius: 40px ;
+  border-top-right-radius: 40px ;
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 35vh;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+.footer-div{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#page-footer div{
+  margin: 20px 0 20px 0;
+}
+#page-footer div p{
+  color: grey;
+  font-size: 18px;
+}
+#nav-links{
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#nav-links ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+#nav-links ul li{
+  margin: 10px;
+  font-size: 20px !important;
+}
+#nav-links ul li a{
+  color: grey;
+  text-decoration: none;
+}
+#nav-links ul li a:hover{
+  color: white;
+}
+/* --------------------media queries */
+@media (max-width: 1367px) {
+  #Home #home-section #home-left h1 span{
+    font-size: 1em;
+  }
+  #About #about-section #about-right #contact-info p{
+    font-size: 17px;
+  }
+  #Skills #skill-section{
+    height: 100vh;
+    font-size: 14px;
+  }
+  #Skills #skill-section #skill-left #div-skill{
+    margin-bottom: 0px;
+  }
+  #Project #project-section #projects #project-card p{
+    font-size: 12px;
+  }
+  #Contact #contact-right{
+    width: 40%;
+  }
+}
+
+@media (max-width: 1025px) {
+  /* home-section */
+  #Home::before{
+    height: 100vh;
+  }
+  #Home{
+    height: 92vh;
+  }
+  #Home #home-section{
+    flex-direction: column;
+  }
+  #Home #home-section #home-left{
+    justify-content: center;
+    align-items: start;
+    width: 600px;
+    height: 40vh;
+    margin-top: 20px;
+  }
+  #home-left #home-buttons button{
+    width: 200px !important;
+  }
+  #home-left #home-buttons #DisplayIcons{
+    width: 40% !important;
+    margin-left: 20px !important;
+  }
+  #home-right {
+    display: block;
+    margin-top: 20px;
+  }
+  .ms-5{
+    margin-left: 0px !important;
+  }
+  .h-100{
+    height: 40vh !important;
+  }
+  .w-50{
+    width: 600px !important;
+  }
+  .rounded-circle{
+    border-radius: 20px !important;
+  }
+  #home-right .portfolio-img{
+    width: 100% !important;
+  }
+  /* About section */
+  #About{
+    height: 120vh !important;
+    
+  }
+  #About #about-section{
+    height: 100% !important;
+    flex-direction: column-reverse;
+  }
+  #About #about-section #about-left{
+    justify-content: center;
+    align-items: start;
+    width: 75% !important;
+    height: 100vh;
+    margin: 0 !important;
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+  }
+  #About #about-section #about-right{
+    justify-content: center;
+    align-items: start;
+    width: 70% !important;
+    height: 50vh;
+    margin-top: 20px;
+  }
+  #about-right div{
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+  #about-section #about-right #DisplayIcons{
+    width: 40% !important;
+    margin-left: 40px !important;
+  }
+  /* Skills section */
+  #Skills{
+    height: 100vh !important;
+    border-radius: 50px !important;
+  }
+  #Skills #skill-section{
+    flex-direction: column;
+    padding: 20px !important;
+  }
+  #Skills #skill-section #skill-left{
+    height: 50vh;
+    width: 70% !important;
+    margin-top: 10px !important;
+  }
+  #skill-left #div-skill{
+    margin-bottom: 0 !important;
+  }
+  #skill-left #prog-section #fifth{
+    width: 50% !important;
+  }
+  #Skills #skill-section #skill-right{
+    height: 50vh;
+    width: 70% !important; 
+  }
+  /* Project section */
+  #Project{
+    height: 115vh !important;
+  }
+  #Project #project-section #heading{ 
+    display: block;
+  }
+  #Project #project-section{
+    flex-direction: column;
+    padding: 20px !important;
+    height: 100% !important;
+    justify-content: space-evenly !important;
+  }
+  #Project #project-section #projects-div{
+    flex-direction: column;
+    flex-wrap: nowrap ;
+  }
+  #projects-div #project{
+    width: 100% !important;
+  }
+  /* Contact section */
+  #Contact{
+    height: 100vh !important;
+    flex-direction: column;
+  }
+  #contact-left{
+    width: 80% !important;
+  }
+  #contact-right{
+    width: 80% !important;
+  }
+  /* Footer section */
+  #Footer p{
+    font-size: 14px;
+  }
+  #Footer #DisplayIcons{
+    width: 30% !important;
+  }
+  /* page-footer */
+  #page-footer .footer-div{
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 835px) {
+  #Home::before{
+    height: 100vh;
+  }
+  #Home{
+    height: 90vh;
+  }
+  #Home #home-section{
+    flex-direction: column;
+  }
+  #Home #home-section #home-left{
+    justify-content: center;
+    align-items: start;
+    width: 550px;
+    height: 40vh;
+    margin-top: 20px;
+  }
+  #home-left #home-buttons button{
+    width: 200px !important;
+  }
+  #home-left #home-buttons #DisplayIcons{
+    width: 40% !important;
+    margin-left: 20px !important;
+  }
+  #home-right {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .ms-5{
+    margin-left: 0px !important;
+  }
+  .h-100{
+    height: 50vh !important;
+  }
+  .w-50{
+    width: 550px !important;
+  }
+  .rounded-circle{
+    border-radius: 20px !important;
+  }
+  #home-right .portfolio-img{
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #home-right .portfolio-img img{
+    width: 100% !important;
+    height: 100% !important;
+  }
+  /* ----------------------------About section */
+  #About{
+    height: 150vh !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  #About #about-section{
+    height: 100% !important;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #About #about-section #about-left{
+    justify-content: center;
+    align-items: start;
+    width: 70% !important;
+    height: 70vh;
+    margin: 0 !important;
+    margin-top: 20px;
+  }
+  #About #about-section #about-right{
+    justify-content: center;
+    align-items: start;
+    width: 90% !important;
+    height: 50vh;
+    margin-top: 20px;
+  }
+  #about-right div{
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+  #about-section #about-right #DisplayIcons{
+    width: 40% !important;
+    margin-left: 40px !important;
+  }
+  /* --------------------Skills section */
+  #Skills{
+    height: 110vh !important;
+    border-radius: 50px !important;
+  }
+  #Skills #skill-section{
+    flex-direction: column;
+    padding: 20px !important;
+  }
+  #Skills #skill-section #skill-left{
+    height: 60vh;
+    width: 90% !important;
+    margin-top: 10px !important;
+  }
+  #skill-left #div-skill{
+    margin-bottom: 0 !important;
+  }
+  #skill-left #prog-section #fifth{
+    width: 50% !important;
+  }
+  #Skills #skill-section #skill-right{
+    height: 50vh;
+    width: 70% !important; 
+  }
+  /* --------------------Project section */
+  #Project{
+    height: 143vh !important;
+  }
+  #Project #project-section #heading{ 
+    display: block;
+  }
+  #Project #project-section{
+    flex-direction: column;
+    padding: 20px !important;
+    height: 100% !important;
+    justify-content: space-evenly !important;
+  }
+  #Project #project-section #projects-div{
+    flex-direction: column;
+    flex-wrap: nowrap ;
+  }
+  #projects-div #project{
+    width: 100% !important;
+  }
+  /* -------------------Contact section */
+  #Contact{
+    height: 100vh !important;
+    flex-direction: column;
+  }
+  #contact-left{
+    width: 80% !important;
+  }
+  #contact-right{
+    width: 80% !important;
+  }
+  /* ----------------Footer section */
+  #Footer p{
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  #Footer #DisplayIcons{
+    width: 27% !important;
+  }
+  /* --------------page-footer */
+  #page-footer{
+    height: 50vh !important;
+  }
+  #page-footer .footer-div div h1{
+    font-size: 26px !important;
+  }
+  #page-footer .footer-div div p, .footer-div div ul li a{
+    font-size: 18px !important;
+  }
+
+}
+
+@media (max-width: 991.98px) { 
+  nav #container #name{
+    font-size: 18px !important;
+  }
+  nav #container{
+    justify-content: space-between !important;
+  }
+  #Home{
+    height: 96vh !important;
+  }
+  #Home::before{
+    height: 110vh !important;
+  }
+  #home-left{
+    width: 400px !important;
+  }
+  #home-left h1{
+    font-size: 20px !important;
+  }
+  #home-left p{
+    font-size: 11px !important;
+  }
+  #home-left #home-buttons button{
+    font-size: 10px;
+    width: 80px !important;
+  }
+  #home-right{
+    width: 400px !important;
+  }
+  #home-right .portfolio-img{
+    width: 100% !important;
+  }
+  #About{
+    height: 130vh !important;
+  }
+  #About #about-section{
+    height: 100% !important;
+    width: 100% !important;
+  }
+  #about-left{
+    height: 50vh;
+  }
+  #about-right{
+    height: 60vh;
+  }
+  #about-right div p{
+    font-size: 14px !important;
+  }
+  #About #about-left .portfolio-img{
+    height: 50vh !important;
+    width: 100% !important;
+  }
+  
+  /* --------------------Skills section */
+  #Skills{
+    height: 130vh;
+    border-radius: 20px !important;
+  }
+  #Skills #skill-section{
+    height: 100% !important;
+    width: 100% !important;
+  }
+  #Skills #skill-section #skill-left{
+    height: 80vh;
+  }
+  #skill-left #div p{
+    font-size: 14px !important;
+  }
+  #Skills #skill-section #skill-right{
+    height: 50vh;
+  }
+  #Skills #skill-right .skills-img{
+    height: 40vh;
+  }
+  /* --------------------Project section */
+  #Project{
+    height: 235vh !important;
+  }
+  #Project #project-section{
+    padding: 10px !important;
+    height: 100% !important;
+    justify-content: space-evenly !important;
+  }
+  #project-div{
+    height: 200vh !important;
+    width: 100% !important;
+    justify-content: space-evenly !important;
+  }
+  #projects-div #project{
+    flex-direction: column !important;
+    width: 100% !important;
+    height: 40vh !important;
+  }
+  #project #prog-img{
+    width: 100% !important;
+    height: 50% !important;
+    margin-bottom: 10px;
+  }
+  #project #prog-text{
+    font-size: 14px;
+    width: 100%;
+  }
+  #project #prog-text a{
+    width: 100% !important;
+  }
+  /* -------------------Contact section */
+  #Contact{
+    height: 120vh !important;
+  }
+  #contact-left{
+    height: 35vh !important;
+    width: 100% !important;
+  }
+  #contact-right{
+    height: 100vh !important;
+    width: 100% !important;
+  }
+  /* ---------------------Footer section */
+  #Footer{
+    height: 10vh;
+    font-size: 8px;
+  }
+  #Footer div{
+    display: none;
+  }
+  /* ----------------------page-footer */
+  #page-footer{
+    height: 60vh !important;
+  }
+  #page-footer .footer-div{
+    
+    justify-content: center;
+    
+  }
+  #page-footer div h1, #page-footer div p{
+    font-size: 12px;
+  }
+  #page-footer .footer-div #nav-links{
+    display: none;
+  }
+  #DisplayIcons{
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 395px) {
+  nav #container #name{
+    font-size: 14px !important;
+  }
+  #Home #home-left{
+    width: 350px !important;
+  }
+  #Home #home-right{
+    width: 350px !important;
+  }
+  #Skills{
+    height: 140vh !important;
+  }
+  #contact-left{
+    font-size: 12px !important;
+  }
+  #Footer p{
+    font-size: 10px !important;
+  }
+  
+}
+
+
